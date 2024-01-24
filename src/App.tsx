@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react';
 import {useAppDispatch, useAppSelector} from "./app/hooks";
 import {fetchAllCountries} from "./actions/asyncActions";
-import { DataGrid } from '@mui/x-data-grid';
+import {DataGrid} from '@mui/x-data-grid';
 import {Box} from "@mui/material";
 import {columns} from "./utils/utils";
+
 const App = () => {
     const dispatch = useAppDispatch();
     const {status, countries, error} = useAppSelector(state => state.countriesReducer);
 
-
+//TODO: implement charts
 
 
     useEffect(() => {
